@@ -1,3 +1,5 @@
 PiUpdates
 MagicMirror
 MagicMirror/modules/MMM-Remote-Control
+MagicMirror/modules/MMM-Wunderlist
+MagicMirror/modules/MMM-BackgroundSlideshow
