@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pushd /Home/pi/$0
+pushd /home/pi/$0
 git pull
 
 #sudo apt-get update && sudo apt-get upgrade -y 
