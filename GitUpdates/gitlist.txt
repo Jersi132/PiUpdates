@@ -1,1 +1,3 @@
 PiUpdates
+MagicMirror
+MagicMirror/modules/MMM-Remote-Control
