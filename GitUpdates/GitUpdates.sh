@@ -5,8 +5,18 @@ filename='gitlist.txt'
 while read p; do 
     echo $p
     cd /home/pi/$p
-    git pull
-    npm install
+    changed=0
+    git remote update && git status -uno | grep -q 'Your branch is behind' && changed=1
+    if [ $changed = 1 ]; then
+        git pull
+        npm install
+        echo "Updated successfully";
+    else
+        echo "Up-to-date"
+    fi
+
+    #git pull
+    #npm install
 done < $filename
 
 #cd /home/pi/$1
