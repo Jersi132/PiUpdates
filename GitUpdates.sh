@@ -2,6 +2,7 @@
 
 cd /home/pi/$1
 git pull
+npm install
 
 #sudo apt-get update && sudo apt-get upgrade -y 
 #sudo rpi-update -y
