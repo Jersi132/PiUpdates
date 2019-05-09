@@ -1,5 +1,8 @@
 #!/bin/bash
 
+currentDate=`date`
+echo "Start: "$currentDate
+
 #Github Updates
 cd /home/pi/PiUpdates/GitUpdates && ./GitUpdates.sh
 
@@ -9,3 +12,7 @@ sudo rpi-update -y
 sudo apt-get autoremove -y
 sudo apt-get autoclean -y
 sudo reboot
+
+currentDate=`date`
+echo "Finish: "$currentDate
+
