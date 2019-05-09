@@ -1,6 +1,7 @@
 #!/bin/bash
 
 currentDate=`date`
+echo "--------------------------------------------"
 echo "Start: "$currentDate
 
 #Github Updates
@@ -15,4 +16,4 @@ sudo reboot
 
 currentDate=`date`
 echo "Finish: "$currentDate
-
+echo "--------------------------------------------"
