@@ -11,6 +11,7 @@ while read p; do
 		git stash save
         git pull
         npm install
+		git stash apply
         echo "Updated successfully";
     else
         echo "Up-to-date"
